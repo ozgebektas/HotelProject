@@ -1,0 +1,36 @@
+﻿@model List<HotelProject.Entitylayer.Concrete.Privileges>
+
+
+<section class="feature padding-top padding-bottom">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <div class="section-header__content">
+                <h2>Siz değerli misafirlerimizi ağırlamaktan mutluluk duyar, konforlu ve unutulmaz bir konaklama deneyimi sunmak için buradayız..</h2>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="feature__wrapper">
+            <div class="row g-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xl-3 col-md-6">
+                        <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="feature__item-inner">
+                                <div class="feature__item-thumb">
+                                    <img src="@item.Icon" alt="feature icon">
+                                </div>
+                                <div class="feature__item-content">
+                                    <h3>@item.Title</h3>
+                                    <p>@item.Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</section>
